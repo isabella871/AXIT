@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* outline: 1px solid blue; */
+    /*outline: 1px solid blue;  */
 }
 
 :root{
@@ -40,7 +40,7 @@
 nav{
     background-color: var(--negro);
     height: 65px;
-    padding: 0 11% 0 11%;
+    padding: 0 10% 0 10%;
 }
 
 .nav-content{
@@ -71,8 +71,8 @@ nav ul{
     background-size: 100%;
     background-repeat: no-repeat;
     /*background-position: center 100px;*/
-    height: 95vh;
-    padding: 7% 10% 0 10%;
+    height: 87vh;
+    padding: 10% 10% 0 10%;
 }
 
 .banner-content{
@@ -132,6 +132,7 @@ hr{
 input{
     border: none;
     padding-left: 14px;
+    padding-bottom: 5px;
     font-size: 15px;
     width: 220px;
     border-bottom: 1px solid var(--grisClaro);
@@ -159,12 +160,13 @@ input{
     font-weight: 400;
     width: 300px;
     font-size: 14px;
+    font-weight: 500;
     padding: 11px 0 11px 0 ;
 }
 
 /* Social Media */
 .social-media{
-    padding: 10px 11% 10px 9%;
+    padding: 10px 10% 10px 10%;
     font-family: "Open Sans", sans-serif;
     display: flex;
     align-items: center;
@@ -183,7 +185,7 @@ input{
 
 .redes{
     display: flex;
-    gap: 20px;
+    justify-content: space-evenly;
 }
 
 .redes img{
@@ -205,7 +207,12 @@ input{
 
 .block1-content{
     display: flex;
-    gap: 80px;
+    gap: 50px;
+}
+
+.block1-content2{
+    display: flex;
+    gap: 70px;
 }
 
 .tab1{
@@ -256,13 +263,12 @@ input{
 /* Segundo Bloque: sub-list */
 .sub-list{
     padding: 7% 10% 7% 10%;
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    gap: 150px;
+    font-family: var(--tipografia2)
 }
 
 .subList-img{
-    width: 60%;
+    width: 90%;
+    height: 90%;
     /*desplazamiento vertical, horizontal, desenfoque y color*/
     filter: drop-shadow(4px 10px 14px #a8a8a8);
 }
@@ -272,74 +278,46 @@ input{
     font-size: 14px
 }
 
-.content-subList{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.content-subList img{
+    width: 15%;
+    height: 45%;
 }
 
-.content-subList h2{
-    color: var(--gris);
-    font-size: 18px;
-}
-
-.sub-tittle h3{
-    color: var(--gris);
-    font-size: 14px;
-}
-
-.content-subList hr{
-    border: 1px solid var(--naranja);
-}
-
-.content-subTittle{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.sub-tittle{
-    display: flex;
-    gap: 15px;
-}
-
-.sub-tittle img{
-    width: 36px;
-    height: 36px;
-}
-
-/* Tercer Bloque: Standard */
-.standard{
-    padding: 7% 10% 7% 10%;
-    background-color: var(--grisClaro2);
-    font-family: var(--tipografia2);
+.content-list{
     display: flex;
     gap: 150px;
 }
 
-.standard img{
-    width: 60%;
-    filter: drop-shadow(4px 10px 14px #a8a8a8);
+.content-subList{
+    display: flex;
+    gap: 25px;
+    align-items: center;
 }
 
-.standard-text{
+.title{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
 }
 
-.standard-text h2{
+.content-list h2{
     color: var(--gris);
     font-size: 18px;
 }
 
-.standard-text p{
-    color: var(--grisSemiOscuro);
+.content-list h3{
+    color: var(--gris);
     font-size: 14px;
 }
 
-.standard-text hr{
+.content-list hr{
     border: 1px solid var(--naranja);
+}
+
+.text-subList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 /* Cuarto Bloque: Awesome */
@@ -581,17 +559,15 @@ input{
 
 .reviews-inline{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 40px;
 }
 
 .image-costumers{
     position: relative;
-    display: inline-block;
 }
 
 .image-costumers img{
-    display: block;
     width: 100%;
 }
 
@@ -653,7 +629,7 @@ input{
 
 /* Contact Us */
 .contact-us{
-    padding: 7% 10% 7% 10%;
+    padding: 5% 10% 5% 10%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -717,7 +693,7 @@ footer img{
     width: 22%;
 }
 
-/*
+
 @media screen and (min-width: 921px) and (max-width: 1279px){
     .banner-image{
         height: 85vh;
@@ -729,13 +705,12 @@ footer img{
     }
 
     .social-media p{
-        width: 260px;
+        width: 310px;
     }
 
     .social-media{
-        padding: 10px 2% 10px 9%;
+        padding: 10px 9% 10px 9%;
     }
-
 
     .redes img{
         width: 8%;
@@ -761,7 +736,7 @@ footer img{
     }
 
     .block1-content{
-        gap: 20px;
+        justify-content: space-around;
     }
 
     .block1-content img{
@@ -779,16 +754,199 @@ footer img{
 
     .sub-list{
         padding: 7% 9% 7% 9%;
-        gap: 50px;
     }
 
     .subList-img{
-        width: 100%;
+        width: 55%;
     }
 
-    .image-sublist{
-        width: 30%;
+    .content-subList img{
+        width: 22%;
+        height: 22%;
     }
 
+    .content-list{
+        gap: 90px;
+    }
 
+    /* Pricing Options */
+    .pricing{
+        padding: 7% 9% 7% 9%;
+    }
+
+    .pricing-text{
+        gap: 9px;
+    }
+
+    .card1{
+        width: 240px;
+    }
+
+    .card2{
+        width: 240px;
+    }
+
+    /* Costumers */
+    .image-costumers img{
+        width: 93%;
+        height: 179%;
+    }
+
+    .costumers-review p{
+        font-size: 12.5px;
+    }
+
+    .info-costumers{
+        position: absolute;
+        top: 5%;
+        padding: 0 16px 0 11px;
+    }
+
+    .info-profile img{
+        width: 57px;
+        height: 57px;
+    }
+
+    .axure{
+        padding: 2% 0 5% 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 920px){
+    nav{
+        height: 52px;
+        padding: 0 8% 0 8%;
+    }
+
+    .nav-content{
+        height: 52px;
+    }
+
+    .nav-img{
+        width: 40%;
+        height: 40%;
+    }
+
+    nav ul{
+        gap: 17px;
+        font-size: 13px;
+    }
+
+    .banner-image{
+        height: 85vh;
+        padding: 10% 8% 7% 8%;
+    }
+
+    .logo-AXIT{
+        width: 27%;
+    }
+
+    .banner-content h1{
+        font-size: 24px;
+        padding-top: 7px;
+    }
+
+    hr{
+        width: 45px;
+    }
+
+    .banner-content p{
+        font-size: 13px;
+        width: 310px;
+    }
+
+    .transparent-button{
+        padding: 5px 17px 5px 17px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .formulario h2{
+        font-size: 15px;
+        height: 35px;
+        width: 250px;
+    }
+
+    input{
+        padding-left: 8px;
+        font-size: 13px;
+        width: 170px;
+    }
+
+    .elements{
+        height: 180px;
+        gap: 25px;
+    }
+
+    .button-free{
+        padding: 10px 0 10px 0;
+        width: 250px;
+    }
+
+    .social-media{
+        padding: 8px 8% 8px 8%;
+        justify-content: space-between;
+    }
+
+    .social-media p{
+        font-size: 13px;
+        width: 290px;
+    }
+
+    .social-media h2{
+        font-size: 16px;
+    }
+
+    .redes img{
+        width: 9%;
+    }
+
+    .tabs{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .tab1{
+        border-right: 1px solid var(--blanco);
+        width: 172px;
+        height: 84px;
+    }
+
+    .tab2{
+        border-right: 1px solid var(--blanco);
+        width: 172px;
+        height: 84px;
+    }
+
+    .block1{
+        padding:  8%;
+    }
+
+    .block1-content{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .block1-content2{
+        align-items: center;
+        gap: 22px;
+    }
+
+    .image-block1{
+        align-items: center;
+    }
+
+    .content2-img{
+        width: 260px;
+    }
+    
+    .sub-list{
+        padding: 12% 8%;
+    }
+
+    .content-list{
+        
+    }
 }
