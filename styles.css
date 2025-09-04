@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /*outline: 1px solid blue;  */
+    /*outline: 1px solid blue;*/
 }
 
 :root{
@@ -68,11 +68,13 @@ nav ul{
 .banner-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0.5)), url(assets/headerBg.png);
-    background-size: 100%;
+    background-size: cover;
+    display: inline-block;
     background-repeat: no-repeat;
     /*background-position: center 100px;*/
-    height: 87vh;
-    padding: 10% 10% 0 10%;
+    width: 100%;
+    height: 90vh;
+    padding: 12% 10% 0 10%;
 }
 
 .banner-content{
@@ -123,7 +125,7 @@ hr{
     font-family: var(--tipografia1);
     color: var(--gris);
     font-size: 18px;
-    width: 300px;
+    width: 320px;
     height: 45px;
     align-content: center;
     text-align: center;
@@ -158,7 +160,7 @@ input{
     color: var(--blanco);
     border: none;
     font-weight: 400;
-    width: 300px;
+    width: 320px;
     font-size: 14px;
     font-weight: 500;
     padding: 11px 0 11px 0 ;
@@ -599,8 +601,9 @@ input{
 .axure{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0)), url(assets/bg2.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100%;
     color: var(--blanco);
     font-family: var(--tipografia1);
@@ -616,11 +619,11 @@ input{
 
 .axure h2{
     font-weight: 300;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 .axure p{
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .axure button{
@@ -833,8 +836,8 @@ footer img{
     }
 
     .banner-image{
-        height: 85vh;
-        padding: 10% 8% 7% 8%;
+        height: 70vh;
+        padding: 10% 8% 40% 8%;
     }
 
     .logo-AXIT{
@@ -843,7 +846,7 @@ footer img{
 
     .banner-content h1{
         font-size: 24px;
-        padding-top: 7px;
+        padding-top: 0px;
     }
 
     hr{
@@ -920,7 +923,7 @@ footer img{
     }
 
     .block1{
-        padding:  8%;
+        padding: 8%;
     }
 
     .block1-content{
@@ -941,12 +944,492 @@ footer img{
     .content2-img{
         width: 260px;
     }
-    
+    /* sub list */
     .sub-list{
-        padding: 12% 8%;
+        padding: 10% 8% 10% 8%;
     }
 
     .content-list{
-        
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .subList-img{
+        width: 75%;
+    }
+
+    .content-subList img{
+        width: 5%;
+    }
+    /* Pricing cards */
+    .pricing{
+        padding: 10% 0 10% 0;
+    }
+
+    .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    /* Awesome */
+    .awesome{
+        padding: 10% 8% 10% 8%;
+    }
+    /* Costumers */
+    .costumers-review{
+        padding: 12% 8%;
+    }
+
+    .reviews-inline{
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .image-costumers img{
+        width: 105%;
+    }
+
+    .info-costumers{ 
+        top: 9%;
+    }
+    /* Axure */
+    .axure{
+        padding: 3% 8% 3% 8%;
+    }
+
+    .contact-us{
+        padding: 10% 8% 10% 8%;
+    }
+
+    .contact-form input{
+        width: 290px;
+    }
+
+    footer img{
+        width: 30%;
+    }
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    body p{
+        font-size: 15px;
+    }
+    
+    nav{
+        height: 55px;
+        padding: 0 6%;
+    }
+
+    .banner-image{
+        padding: 9% 6%;
+        height: 76vh;
+    }
+
+    .nav-content{
+        height: 55px;
+    }
+
+    .nav-img{
+        width: 60%;
+        height: 60%;
+    }
+
+    .banner-content{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .banner-content h1{
+        font-size: 22px;
+    }
+
+    .banner-content p{
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .logo-AXIT{
+        width: 20%;
+    }
+    
+    .banner-items{
+        flex-direction: column;
+        align-items: start;
+        gap: 60px;
+    }
+
+    .transparent-button{
+        font-size: 15px;
+    }
+
+    .formulario h2{
+        font-size: 16px;
+        height: 35px;
+    }
+
+    input{
+        width: 210px;
+    }
+
+    .elements{
+        gap: 30px;
+        height: 170px;
+    }
+
+    .formulario p{
+        font-size: 14px;
+    }
+
+    .social-media{
+        flex-direction: column;
+        padding: 2% 6%;
+        gap: 10px;
+        width: 100%;
+        align-items: start;
+    }
+
+    .social-media p{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .social-media img{
+        width: 8%;
+    }
+
+    .tabs{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .tab1{
+        width: 114px;
+        height: 85px;
+    }
+
+    .tab2{
+        width: 114px;
+        height: 85px;
+    }
+
+    .block1{
+        padding: 9% 6%;
+    }
+
+    .block1-content{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .block1-content2{
+        flex-direction: column;
+    }
+
+    .content2-img{
+        width: 280px;
+    }
+
+    .awesome-items{
+        flex-direction: column;
+        gap: 52px;
+    }
+
+    .awesome-items img{
+        width: 11%;
+        height: 11%;
+    }
+
+    .content-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .reviews-inline{
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .contact-form input{
+        width: 180px;
+    }
+
+    footer img{
+        width: 52%;
+    }
+}
+
+@media screen and (min-width: 352px) and (max-width: 480px){
+    .logo-AXIT{
+        width: 20%;
+    }
+
+    nav{
+        height: 50px;
+        padding: 0 4%;
+    }
+
+    .nav-content{
+        height: 50px;
+    }
+
+    nav li{
+        font-size: 13px;
+    }
+
+    .nav-img{
+        width: 36%;
+        height: 36%;
+    }
+    
+    .banner-items{
+        flex-direction: column;
+        align-items: start;
+        gap: 50px;
+    }
+
+    .banner-image{
+        padding: 10% 4%;
+        height: 78vh;
+    }
+
+    .banner-image p{
+        font-size: 13px;
+        width: 75%;
+    }
+
+    .banner-image h1{
+        font-size: 20px;
+    }
+
+    .formulario{
+        width: 290px;
+    }
+
+    .formulario h2{
+        font-size: 17px;
+        height: 35px;
+        width: 290px;
+    }
+
+    .formulario p{
+        font-size: 13px;
+    }
+
+    .elements{
+        gap: 25px;
+        height: 170px;
+    }
+
+    .button-free{
+        width: 290px;
+    }
+
+    .social-media{
+        flex-direction: column;
+        padding: 2% 4%;
+        gap: 10px;
+        width: 100%;
+        align-items: start;
+    }
+
+    .social-media p{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .social-media h2{
+        font-size: 17px;
+    }
+
+    .redes img{
+        width: 7%;
+    }
+
+    .block1{
+        padding: 7% 4%;
+    }
+
+    .block1 p{
+        font-size: 13px;
+    }
+
+    .block1 h2{
+        font-size: 17px;
+    }
+
+    .tabs{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .tab1{
+        width: 110px;
+        height: 75px;
+    }
+
+    .tab2{
+        width: 110px;
+        height: 75px;
+    }
+
+    .sub-list{
+        padding: 7% 4%;
+    }
+
+    .block1-content{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .block1-content2{
+        flex-direction: column;
+    }
+
+    .content-list h2{
+        font-size: 17px;
+    }
+
+    .content-list p{
+        font-size: 13px;
+    }
+
+    .content2-img{
+        width: 250px;
+    }
+
+    .awesome{
+        padding: 9% 4%;
+    }
+
+    .awesome-items{
+        flex-direction: column;
+        gap: 52px;
+    }
+
+    .awesome h2{
+        font-size: 17px;
+    }
+
+    .awesome-items h3{
+        font-size: 15px;
+    }
+
+    .awesome-items p{
+        font-size: 13px;
+    }
+
+    .awesome-items img{
+        width: 11%;
+        height: 11%;
+    }
+
+    .content-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .pricicig{
+        padding: 9% 4%;
+    }
+
+    .pricing-text h2{
+        font-size: 17px;
+    }
+
+    .pricing-text p{
+        font-size: 13px;
+    }
+
+    .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+        font-size: 13px;
+        gap: 50px;
+    }
+
+    .card1{
+        width: 270px;
+    }
+
+    .card2{
+        width: 270px;
+    }
+
+    .costumers-review{
+        padding: 9% 4%;
+    }
+
+    .tittle-costumersR h2{
+        font-size: 17px;
+    }
+
+    .tittle-costumersR p{
+        font-size: 13px;
+    }
+
+    .reviews-inline{
+        flex-direction: column;
+        align-items: center;
+        gap: 55px;
+    }
+
+    .image-costumers img{
+        width: 100%;
+    }
+
+    .image-costumers p{
+        font-size: 13px;
+    }
+
+    .info-profile img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .axure h2{
+        font-size: 17px;
+    }
+
+    .axure p{
+        font-size: 13px;
+    }
+
+    .transparent-button{
+        padding: 5px 8px 5px 8px;
+        font-size: 12px;
+    }
+
+    .contact-form input{
+        width: 150px;
+    }
+
+    .contact-us{
+        padding: 9% 4%;
+    }
+
+    .contact-form{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer img{
+        width: 50%;
     }
 }
